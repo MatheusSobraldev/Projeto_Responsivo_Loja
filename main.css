@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #f8f8f8, #e6f5f6);
+}
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    padding: 16px 0 0;
+    background-color: #2E5283;
+    color: #fff;
+    border-bottom: 2px solid #98DDDF;
+    margin-bottom: 56px;
+}
+
+header h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header form button,
+header form input{
+    padding: 8px;
+    font-style: italic;
+}
+
+header form button{
+    border: none;
+    cursor: pointer;
+    background-color: #98DDDF;
+
+}
+
+.submenu{
+    display: none;
+    position: absolute;
+    border: 1px solid #98DDDF;
+    left: 0;
+    width: 300px;
+    top: 100%;
+    background-color: #2E5283;
+}
+
+.menu > li{
+    float: left;
+    list-style: none;
+    padding: 16px;
+    border-top: 4px solid transparent;
+    position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+.menu li:hover .submenu{
+    display: block;
+
+}
+
+.menu li:hover {
+    border-color: #98DDDF;
+}
+
+.menu li{
+    display: block;
+    padding: 8px;
+}
+
+.submenu li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr; 
+}
+
+
+.produto img{
+    max-width: 100%;
+
+}
+.destaque article{
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 56px;
+}
+
+.destaque img {
+    width: 100%;
+}
+
+.texto-destaque h2 {
+    margin-left: 49px;
+    margin-bottom: 32px;
+    border-bottom: 2px solid #2E5283;
+    font-weight: bold;
+    padding: 8px;
+    color: #2E5283;
+    font-size: 1.8em;
+}
+
+.texto-destaque h3 {
+    font-size: 2em;
+    line-height: 1.6;
+    color: #333;
+    margin-left: 49px;
+}
+
+.produtos{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+section h2{
+    margin-bottom: 32px;
+}
+
+section .titulo-produtos h2{
+    color: #2E5283;
+    border-bottom: 2px solid #2E5283;
+    font-size: 1.8em;
+}
+
+.produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    background: #fff;
+}
+
+.produto img {
+    width: 100%;
+    height: 200px;       
+    object-fit: cover;   
+    margin-bottom: 16px;
+}
+
+.produto h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    flex-shrink: 0;
+}
+
+.produto p {
+    flex: 1;             
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 12px;
+}
+
+.produto strong {
+    margin-bottom: 12px;
+    display: block;
+    font-size: 1rem;
+}
+
+.produto button {
+    padding: 10px;
+    background: #2E5283;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.produto button:hover {
+    background: #98DDDF;
+    color: #2E5283;
+}
+
+@media screen and (max-width: 767px){
+    .conteudo{
+        display: block;
+    }
+    .container{
+        max-width: 90%;
+    }
+
+    .destaque article{
+        display: block;
+    }
+
+    .destaque article img{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .destaque article .texto-destaque{
+    font-size: 0.9em;
+}
+
+
+.produtos{
+    display: block;
+}
+
+.produtos .produto{
+    margin-bottom: 32px;
+}
+
+header .container{
+    flex-direction: column;
+}
+
+.submenu{
+    display: block;
+    position: relative;
+    width: 100%;
+    border: none;
+}
+
+.menu{
+    display: none;
+}
+
+.menu > li{
+    clear: both;
+}
+
+.submenu li{
+    display: block;
+    padding: 8%;
+}
+
+.botao-menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    padding-bottom: 16px;
+}
+
+.botao-menu button{
+    padding: 8px;
+    background-color: #98DDDF;
+    border: none;
+    font-style: italic;
+}
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    .container{
+        max-width: 90%;
+    }
+
+    .botao-menu{
+        display: none;
+    }
+
+    .destaque article{
+        display: block;
+    }
+
+    .destaque article .texto-destaque{
+    font-size: 1.2em;
+}
+
+    .produtos{
+        grid-template-columns: repeat(2, 49%);
+    }
+}
+
+@media screen and (min-width: 1024px){
+        .botao-menu{
+        display: none;
+    }
+
+}
+
+

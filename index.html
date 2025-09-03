@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+       <div class="container">
+         <h1>Sobral Esportes</h1>
+        <form>
+            <input type="text" placeholder="Busque seu produto">
+            <button type="button">Buscar</button>
+        </form>
+       </div>
+       <div class="botao-menu">
+        <button type="button">Abrir Menu</button>
+    </div>
+        <nav class="container">
+            <ul class="menu">
+                <li>
+                    Sobre a Loja
+                    <ul class="submenu">
+                        <li>
+                            <a href="#">Em destaque</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Produtos
+                       <ul class="submenu">
+                        <li>
+                            <a href="#">Tênis</a>
+                        </li>
+                        <li>
+                            <a href="#">Casaco</a>
+                        </li>
+                        <li>
+                            <a href="#">Short</a>
+                        </li>
+                        <li>
+                            <a href="#">Camisa</a>
+                        </li>
+                        <li>
+                            <a href="#">Bola</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </nav>
+    </header>
+    <div class="container conteudo">
+        <main>
+            <section class="destaque">
+                <article>
+                    <img src="./Imagens/Loja_destaque.jpg" alt="Loja_destaque">
+          <div class="texto-destaque">
+                  <h2>Sobre a Loja</h2>
+                <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero porro, nesciunt quos nobis soluta in nam voluptas nulla, deleniti tenetur doloribus dolor illo minus, quas eos amet quod. Amet, fuga!</h3>
+          </div>
+                </article>
+            </section>
+            <section>
+                <div class="titulo-produtos">
+                    <h2>Produtos</h2>
+                </div>
+                <div class="produtos">
+                    <article class="produto">
+                    <a href="#">
+                        <img src="./Imagens/tênis.jpg" alt="Tenis">
+                        <h3>Tênis de corrida</h3>
+                    </a>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae perspiciatis odio dolorem cumque necessitatibus quisquam soluta, molestias quas quasi, vero ea voluptatibus modi non corrupti sapiente facilis, minima officiis maiores!
+                        </p>
+                        <strong>R$400,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./Imagens/short.jpg" alt="Short">
+                        <h3>Short preto esporte fino</h3>
+                    </a>
+                    <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sed quas, quasi obcaecati molestiae labore recusandae nostrum facilis dicta reiciendis tenetur assumenda omnis beatae error alias minima animi fuga. Sapiente?
+                        </p>
+                        <strong>R$80,00</strong>
+                        <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./Imagens/casaco.jpg" alt="Casaco">
+                        <h3>Casaco corta vento</h3>
+                    </a>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate dolorem at, quidem voluptatibus harum numquam et consectetur rerum unde? A exercitationem, pariatur eius illo dicta porro accusamus id unde nisi?</p>
+                    <strong>R$ 120,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                <article class="produto">
+                    <a href="#">
+                        <img src="./Imagens/Camisa.jpg" alt="Camisa">
+                        <h3>Camisa de malha</h3>
+                    </a>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, iure! Adipisci natus, amet inventore perferendis ullam rerum dolorem, vitae laudantium vero molestias commodi minus autem similique porro quibusdam libero consequuntur.</p>
+                    <strong>R$90,00</strong>
+                    <button type="button">Adicionar ao carrinho</button>
+                </article>
+                </div>
+            </section>
+        </main>
+    </div>
+     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <script>
+    $(document).ready(function(){
+        $('.botao-menu button').click(function(){
+            $('.menu').slideToggle();
+        })
+    })
+   </script>
+    
+</body>
+</html>
